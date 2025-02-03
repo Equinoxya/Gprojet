@@ -13,4 +13,6 @@ code {
 }
 p{
   color: red;
+  text-align: center;
+  font-size: 56px;
 }
