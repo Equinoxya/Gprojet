@@ -4,7 +4,11 @@ import './Charly.css';
 const Charly = () => {
     return (
         <div>
-            <img className='Charly' src="/images/Charly.png" alt="Charly" />
+            <img 
+            className='Charly' 
+            src="/images/Charly.png" 
+            alt="Charly"
+            style={{ pointerEvents: "none", userSelect: "none" }} />
         </div>
     );
 };
