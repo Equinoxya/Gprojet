@@ -8,7 +8,7 @@ const Charly = () => {
             className='Charly' 
             src="/images/Charly.png" 
             alt="Charly"
-            style={{ pointerEvents: "none", userSelect: "none" }} />
+            onContextMenu={(e) => e.preventDefault()} />
         </div>
     );
 };
