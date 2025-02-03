@@ -1,0 +1,47 @@
+.logo-bhaal{
+    width: 100px;
+    height: 100px;
+    color: white;
+    margin-top: 5%;
+    position: absolute;
+    left: 48%;
+    z-index: 1;
+
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    height: 100px;
+    font: -webkit-control;
+    font-size: 15px;
+}
+.navbar-list-right{
+    margin-left: 15%;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+p{
+    margin: 0;
+    align-items: end;
+    font-weight: bold;
+    font-size: 20px;
+}
