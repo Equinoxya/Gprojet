@@ -5,7 +5,10 @@ import Home from './Pages/Home';
 
 function App() {
   useEffect(() => {
+    console.log('useEffect appelé'); // Vérifie si ce message apparaît
+
     const disableRightClick = (event) => {
+      console.log('Clic droit désactivé'); // Vérifie si cet événement se déclenche
       event.preventDefault();
     };
 
@@ -13,7 +16,7 @@ function App() {
     return () => {
       document.removeEventListener("contextmenu", disableRightClick);
     };
-  }, []);
+  }, []);;
   return (
           <div>
             <Home />
