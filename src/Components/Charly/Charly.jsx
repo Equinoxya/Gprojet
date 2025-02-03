@@ -8,7 +8,7 @@ const Charly = () => {
             className='Charly' 
             src="/images/Charly.png" 
             alt="Charly"
-            onContextMenu={(e) => e.preventDefault()} />
+            onDragStart={(e) => e.preventDefault()} />
         </div>
     );
 };
