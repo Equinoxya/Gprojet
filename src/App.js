@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffectEvent } from 'react';
 import Home from './Pages/Home'; // Ensure this path is correct
 
 
 
 function App() {
-  useEffect(() => {
+  useEffectEvent(() => {
     console.log('useEffect appelé'); // Vérifie si ce message apparaît
 
     const disableRightClick = (event) => {
