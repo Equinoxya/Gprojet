@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Home from './Pages/Home';
+import Home from './Pages/Home'; // Ensure this path is correct
 
 
 

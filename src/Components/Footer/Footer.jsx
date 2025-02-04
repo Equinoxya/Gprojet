@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Footer.css';
 const Footer = () => {
     const [email, setEmail] = useState('');
@@ -7,7 +7,22 @@ const Footer = () => {
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
     };
+    useEffect(() => {
+        const handleClick = () => {
+            console.log('Input clicked');
+        };
 
+        const inputElement = document.querySelector('input[type="email"]');
+        if (inputElement) {
+            inputElement.addEventListener('click', handleClick);
+        }
+
+        return () => {
+            if (inputElement) {
+                inputElement.removeEventListener('click', handleClick);
+            }
+        };
+    }, []);
     const handleCheckboxChange = (e) => {
         setIsChecked(e.target.checked);
     };
